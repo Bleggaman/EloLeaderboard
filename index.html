@@ -52,13 +52,13 @@ function addRowToTable(tableID, index, values) {
 fetch('Singles.json')
   .then(response => response.json())
   .then(data => {
-    data.players.forEach(addPlayerToSinglesLeaderboard)
+    data.singles.forEach(addPlayerToSinglesLeaderboard)
   })
 
 fetch('singlesHistory.json')
   .then(response => response.json())
   .then(data => {
-    data.players.forEach(addMatchToSinglesHistory)
+    data.singlesHistory.forEach(addMatchToSinglesHistory)
   })
 
 
