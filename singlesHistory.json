@@ -2,29 +2,25 @@
   "singlesHistory": [
   	{
   		"victor": "Bleg",
-  		"score1": 3,
-  		"score2": 1,
+  		"score": "3-2",
   		"defeated": "Cat",
   		"date": "12/11/20"
   	},
   	{
   		"victor": "Cat",
-  		"score1": 3,
-  		"score2": 1,
+  		"score": "3-1",
   		"defeated": "Bleg",
   		"date": "12/10/20"
   	},
   	{
   		"victor": "Bleg",
-  		"score1": 3,
-  		"score2": 2,
+  		"score": "3-2",
   		"defeated": "Cat",
   		"date": "12/9/20"
   	},
   	{
   		"victor": "Cat",
-  		"score1": 3,
-  		"score2": 0,
+  		"score": "3-0",
   		"defeated": "Bleg",
   		"date": "12/8/20"
   	}

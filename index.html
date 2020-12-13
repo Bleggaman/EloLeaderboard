@@ -34,7 +34,7 @@ function addPlayerToSinglesLeaderboard(player, index) {
 }
 
 function addMatchToSinglesHistory(match, index) {
-  var values = [match.victor, "" + match.score1, "" + match.score2, match.defeated, match.date];
+  var values = [match.victor, "" + match.score, match.defeated, match.date];
   addRowToTable("singlesHistory", index + 1, values);
 }
 
