@@ -1,16 +1,16 @@
 {
-	"singles": [ 
+	"singlesPlayers": [ 
 		{ 
 			"tag": "Bleg",
 			"wins": 2,
 			"totalGames": 4,
-			"score": 1000
+			"score": 999
 		},
 		{ 
 			"tag": "Cat",
 			"Wins": 2,
 			"totalGames": 4,
-			"score": 1000
+			"score": 1001
 		}
 	]
 }

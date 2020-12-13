@@ -3,6 +3,33 @@
 <head>
 <script>
 
+class SinglesData {
+
+  constructor() {
+    this.playerData = new Map();
+  }
+
+  // Processes and registers all players from Singles.json
+  registerPlayers = function registerPlayers(playerData) {
+    var players = playerData.singlesPlayers.sort(leaderboardSorting);
+
+    players.forEach((player, index) => {
+      this.playerData.set(player.tag, player);
+      addPlayerToSinglesLeaderboard(player, index);
+    });
+  }
+
+  registerMatchHistory = function () {
+
+  }
+}
+
+// Takes in two playerDatas (could be either singles or doubles)
+// Compares them based on Score
+function leaderboardSorting(pData1, pData2) {
+  return pData1.score - pData2.score;
+}
+
 function addPlayerToSinglesLeaderboard(player, index) {
   index++;
   var values = ["" + index, player.tag, "" + player.wins, "" + player.totalGames, "" + player.score];
@@ -25,11 +52,13 @@ function addRowToTable(tableID, index, values) {
 }
 
 
+singlesData = new SinglesData();
+
 fetch('Singles.json')
   .then(response => response.json())
   .then(data => {
-    data.singles.forEach(addPlayerToSinglesLeaderboard)
-  })
+    singlesData.registerPlayers(data);
+  });
 
 fetch('singlesHistory.json')
   .then(response => response.json())
@@ -62,6 +91,14 @@ tr:nth-child(even) {
 <h1>Bleg's ELO System</h1>
 
 <h1>Singles</h1>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
 
 <h3>Leaderboard</h3>
 <table id= "singlesLeaderboard">
