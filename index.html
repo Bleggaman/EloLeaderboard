@@ -6,18 +6,31 @@ function myFunction() {
   document.getElementById("demo").innerHTML = "Paragraph changed.";
 }
 
+var singlesTable = document.getElementById("singles");
+var players = [];
+
 function addPlayer(player, index) {
   // Make this not 0 based
   index++;
 
-  var singlesTable = document.getElementById("singles").getElementsByTagName('tbody')[0];
   players.push(player);
-  var tblRow = "<tr>" + "<td>" + index + "</td>"+ "<td>" + player.tag + "</td>" +
-       "<td>" + player.wins + "</td>" + "<td>" + player.totalGames + "</td>" + "<td>" + player.score + "</td>" + "</tr>"
-  singlesTable.append(tblRow);
+  var row = singlesTable.insertRow(index);
+
+  var rank = row.insertCell();
+  var tag = row.insertCell();
+  var wins = row.insertCell();
+  var totalGames = row.insertCell();
+  var score = rows.insertCell();
+
+  rank.innerHTML = index;
+  tag.innerHTML = player.tag;
+  wins.innerHTML = player.wins;
+  totalGames.innerHTML = player.totalGames;
+  score.innerHTML = player.score;
+  
 }
 
-var players = [];
+
 
 fetch('Singles.json')
   .then(response => response.json())
