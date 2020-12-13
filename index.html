@@ -6,14 +6,11 @@ function myFunction() {
   document.getElementById("demo").innerHTML = "Paragraph changed.";
 }
 
-var singlesTable = document.getElementById("singles");
-var players = [];
 
 function addPlayer(player, index) {
   // Make this not 0 based
   index++;
-
-  players.push(player);
+  var singlesTable = document.getElementById("singles");
   var row = singlesTable.insertRow(index);
 
   var rank = row.insertCell();
