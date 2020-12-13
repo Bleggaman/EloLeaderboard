@@ -6,12 +6,11 @@ function myFunction() {
   document.getElementById("demo").innerHTML = "Paragraph changed.";
 }
 
-var singlesTable = document.getElementById("singles");
-
 function addPlayer(player, index) {
   // Make this not 0 based
   index++;
 
+  var singlesTable = document.getElementById("singles").getElementsByTagName('tbody')[0];
   players.push(player);
   var tblRow = "<tr>" + "<td>" + index + "</td>"+ "<td>" + player.tag + "</td>" +
        "<td>" + player.wins + "</td>" + "<td>" + player.totalGames + "</td>" + "<td>" + player.score + "</td>" + "</tr>"
