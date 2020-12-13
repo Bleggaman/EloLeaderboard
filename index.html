@@ -6,11 +6,20 @@ function myFunction() {
   document.getElementById("demo").innerHTML = "Paragraph changed.";
 }
 
+var players = [];
+
 fetch('Singles.json')
   .then(response => response.json())
   .then(data => {
-    console.log(data)
+    data.players.foreach(player => {
+      players.push(player);
+      var tblRow = "<tr>" + "<td>" + player.tag + "</td>" +
+           "<td>" + player.wins + "</td>" + "<td>" + player.totalGames + "</td>" + "<td>" + player.score + "</td>" + "</tr>"
+      $(tblRow).appendTo("#singles tbody");
+    })
   })
+
+
 
 </script>
 <style>
@@ -39,42 +48,14 @@ tr:nth-child(even) {
 
 <h2>HTML Table</h2>
 
-<table>
+<table id= "singles">
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>Tag</th>
+    <th>Wins</th>
+    <th>Total Games</th>
+    <th>Score</th>
   </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
-  </tr>
-  <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
-  </tr>
+  
 </table>
 
 </body>
