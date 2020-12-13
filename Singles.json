@@ -1,16 +1,16 @@
 {
 	"players": [ 
 		{ 
-			"Tag": "Bleg",
-			"Wins": 2,
-			"Total Games": 4,
-			"Score": 1000
+			"tag": "Bleg",
+			"wins": 2,
+			"totalGames": 4,
+			"score": 1000
 		},
 		{ 
-			"Tag": "Cat",
+			"tag": "Cat",
 			"Wins": 2,
-			"Total Games": 4,
-			"Score": 1000
+			"totalGames": 4,
+			"score": 1000
 		}
 	]
 }
