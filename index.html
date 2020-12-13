@@ -10,7 +10,7 @@ function myFunction() {
 function addPlayer(player, index) {
   // Make this not 0 based
   index++;
-  var singlesTable = document.getElementById("singles");
+  var singlesTable = document.getElementById("singlesLeaderboard");
   var row = singlesTable.insertRow(index);
 
   var rank = row.insertCell();
@@ -27,14 +27,39 @@ function addPlayer(player, index) {
   
 }
 
+function addPlayerToSinglesLeaderboard(player, index) {
+  index++;
+  var values = ["" + index, player.tag, "" + player.wins, "" + player.totalGames, "" + player.score];
+  addRowToTable("singlesLeaderboard", index, values);
+}
+
+function addMatchToSinglesHistory(match, index) {
+  var values = [match.victor, "" + match.score1, "" + match.score2, match.defeated, match.date];
+  addRowToTable("singlesHistory", index + 1, values);
+}
+
+// Adds an index'th row to the given table with the given values
+function addRowToTable(tableID, index, values) {
+  var table = document.getElementById(tableID);
+  var row = singlesTable.insertRow(index);
+  for (var i = 0; i < values.length; i++) {
+    var cell = row.insertCell();
+    cell.innerHTML = values[i];
+  }
+}
 
 
 fetch('Singles.json')
   .then(response => response.json())
   .then(data => {
-    data.players.forEach(addPlayer)
+    data.players.forEach(addPlayerToSinglesLeaderboard)
   })
 
+fetch('singlesHistory.json')
+  .then(response => response.json())
+  .then(data => {
+    data.players.forEach(addMatchToSinglesHistory)
+  })
 
 
 </script>
@@ -62,15 +87,28 @@ tr:nth-child(even) {
 <p id="demo">A Paragraph</p>
 <button type="button" onclick="myFunction()">Try it</button>
 
-<h2>Singles</h2>
+<h1>Singles</h1>
 
-<table id= "singles">
+<h3>Leaderboard</h3>
+<table id= "singlesLeaderboard">
   <tr>
     <th>Rank</th>
     <th>Tag</th>
     <th>Wins</th>
     <th>Total Games</th>
     <th>Score</th>
+  </tr>
+  
+</table>
+
+<h3>Leaderboard</h3>
+<table id= "singlesHistory">
+  <tr>
+    <th>Victor</th>
+    <th>Score</th>
+    <th>Score</th>
+    <th>Defeated</th>
+    <th>Date</th>
   </tr>
   
 </table>
