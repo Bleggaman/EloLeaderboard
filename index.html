@@ -41,7 +41,7 @@ function addMatchToSinglesHistory(match, index) {
 // Adds an index'th row to the given table with the given values
 function addRowToTable(tableID, index, values) {
   var table = document.getElementById(tableID);
-  var row = singlesTable.insertRow(index);
+  var row = table.insertRow(index);
   for (var i = 0; i < values.length; i++) {
     var cell = row.insertCell();
     cell.innerHTML = values[i];
