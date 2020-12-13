@@ -2,30 +2,6 @@
 <html>
 <head>
 <script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Paragraph changed.";
-}
-
-
-function addPlayer(player, index) {
-  // Make this not 0 based
-  index++;
-  var singlesTable = document.getElementById("singlesLeaderboard");
-  var row = singlesTable.insertRow(index);
-
-  var rank = row.insertCell();
-  var tag = row.insertCell();
-  var wins = row.insertCell();
-  var totalGames = row.insertCell();
-  var score = row.insertCell();
-
-  rank.innerHTML = index;
-  tag.innerHTML = player.tag;
-  wins.innerHTML = player.wins;
-  totalGames.innerHTML = player.totalGames;
-  score.innerHTML = player.score;
-  
-}
 
 function addPlayerToSinglesLeaderboard(player, index) {
   index++;
@@ -83,9 +59,7 @@ tr:nth-child(even) {
 </head>
 <body>
 
-<h1>A Web Page</h1>
-<p id="demo">A Paragraph</p>
-<button type="button" onclick="myFunction()">Try it</button>
+<h1>Bleg's ELO System</h1>
 
 <h1>Singles</h1>
 
@@ -101,7 +75,7 @@ tr:nth-child(even) {
   
 </table>
 
-<h3>Leaderboard</h3>
+<h3>History</h3>
 <table id= "singlesHistory">
   <tr>
     <th>Victor</th>
