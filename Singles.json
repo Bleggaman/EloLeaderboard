@@ -8,7 +8,7 @@
 		},
 		{ 
 			"tag": "Cat",
-			"Wins": 2,
+			"wins": 2,
 			"totalGames": 4,
 			"score": 1001
 		}

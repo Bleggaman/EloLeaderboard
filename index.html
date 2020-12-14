@@ -27,7 +27,7 @@ class SinglesData {
 // Takes in two playerDatas (could be either singles or doubles)
 // Compares them based on Score
 function leaderboardSorting(pData1, pData2) {
-  return pData1.score - pData2.score;
+  return pData2.score - pData1.score;
 }
 
 function addPlayerToSinglesLeaderboard(player, index) {
@@ -92,13 +92,13 @@ tr:nth-child(even) {
 
 <h1>Singles</h1>
 
-<form action="/action_page.php">
+<!-- <form action="/action_page.php">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
   <label for="lname">Last name:</label>
   <input type="text" id="lname" name="lname"><br><br>
   <input type="submit" value="Submit">
-</form>
+</form> -->
 
 <h3>Leaderboard</h3>
 <table id= "singlesLeaderboard">
