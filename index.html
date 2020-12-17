@@ -19,8 +19,9 @@ class SinglesData {
     });
   }
 
-  registerMatchHistory = function () {
-
+  registerMatchHistory = function (singlesHistoryData) {
+    this.singlesHistory = singlesHistoryData.singlesHistory;
+    this.singlesHistory.forEach(addMatchToSinglesHistory);
   }
 }
 
@@ -51,7 +52,6 @@ function addRowToTable(tableID, index, values) {
   }
 }
 
-
 singlesData = new SinglesData();
 
 fetch('Singles.json')
@@ -63,8 +63,31 @@ fetch('Singles.json')
 fetch('singlesHistory.json')
   .then(response => response.json())
   .then(data => {
-    data.singlesHistory.forEach(addMatchToSinglesHistory)
+    singlesData.registerMatchHistory(data);
   })
+
+// Test
+// singlesData.playerData.set("Bleg", []);
+
+// Button functions
+function submitSinglesMatch() {
+  var allFieldsValid = true;
+
+  var victor = document.getElementById("victor").value;
+  allFieldsValid &= (victor != "");
+
+
+  if (allFieldsValid) {
+    if (singlesData.playerData.has(victor)) {
+      document.getElementById("confirmSinglesMatchText").innerHTML = victor + " won";
+    } else {
+      document.getElementById("confirmSinglesMatchText").innerHTML = "New Player " + victor + " won";
+    }
+    document.getElementById("confirmSinglesMatch").hidden = false;
+  } else {
+    document.getElementById("confirmSinglesMatchText").innerHTML = "Please fill out all fields";
+  }
+}
 
 
 </script>
@@ -91,15 +114,32 @@ tr:nth-child(even) {
 <h1>Bleg's ELO System</h1>
 
 <h1>Singles</h1>
+<br>
+<h3>Report a match</h3>
+<form name="Report a match">
+  <label for="victor">Victor</label>
+  <input type="text" id="victor" name="tag">
+  <label for="score1">Score: </label>
+  <input type="number" id="score1" name="score">
+  <label for="score2">Score: </label>
+  <input type="number" id="score2" name="score">
+  <label for="defeated">Defeated: </label>
+  <input type="text" id="defeated" name="tag"><br><br>
+  <label for="date">Date Played (mm/dd/yy):</label>
+  <input type="date" id="date" name="date played">
+</form> 
+<br>
+<button id="submitSinglesMatch" onclick="submitSinglesMatch()">Submit</button>
+<br><br>
+<p id="confirmSinglesMatchText"></p>
+<br>
+<div hidden id="confirmSinglesMatch">
+  <p>Is this correct?</p>
+  <button type="button">Confirm</button>
+</div>
 
-<!-- <form action="/action_page.php">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit">
-</form> -->
 
+<br>
 <h3>Leaderboard</h3>
 <table id= "singlesLeaderboard">
   <tr>
@@ -111,7 +151,7 @@ tr:nth-child(even) {
   </tr>
   
 </table>
-
+<br>
 <h3>History</h3>
 <table id= "singlesHistory">
   <tr>
