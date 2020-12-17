@@ -10,7 +10,7 @@ class SinglesData {
   }
 
   // Processes and registers all players from Singles.json
-  registerPlayers = function registerPlayers(playerData) {
+  registerPlayers = function (playerData) {
     var players = playerData.singlesPlayers.sort(leaderboardSorting);
 
     players.forEach((player, index) => {
@@ -22,6 +22,19 @@ class SinglesData {
   registerMatchHistory = function (singlesHistoryData) {
     this.singlesHistory = singlesHistoryData.singlesHistory;
     this.singlesHistory.forEach(addMatchToSinglesHistory);
+  }
+
+
+  // Getter methods
+
+  // Returns the score for the player given
+  // - 1 if player not found
+  getPlayerScore = function (player) {
+    if (!this.playerData.has(player)) {
+      return -1;
+    } else {
+      return this.playerData.get(player).score;
+    }
   }
 }
 
@@ -67,7 +80,9 @@ fetch('singlesHistory.json')
   })
 
 // Test
-// singlesData.playerData.set("Bleg", []);
+// var obj = JSON.parse('{"singlesPlayers": [ { "tag": "Bleg","wins": 2,"totalGames": 4,"score": 999},{ "tag": "Cat","wins": 2,"totalGames": 4,"score": 1001}]}');
+// singlesData.registerPlayers(obj);
+
 
 // Button functions
 function submitSinglesMatch() {
@@ -79,7 +94,8 @@ function submitSinglesMatch() {
 
   if (allFieldsValid) {
     if (singlesData.playerData.has(victor)) {
-      document.getElementById("confirmSinglesMatchText").innerHTML = victor + " won";
+      var score = singlesData.getPlayerScore(victor)
+      document.getElementById("confirmSinglesMatchText").innerHTML = victor + "(" + score + ") won";
     } else {
       document.getElementById("confirmSinglesMatchText").innerHTML = "New Player " + victor + " won";
     }
