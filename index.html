@@ -51,7 +51,7 @@ function addPlayerToSinglesLeaderboard(player, index) {
 }
 
 function addMatchToSinglesHistory(match, index) {
-  var values = [match.victor, "" + match.score, match.defeated, match.date];
+  var values = [match.victor, "" + match.score, match.defeated];
   addRowToTable("singlesHistory", index + 1, values);
 }
 
@@ -67,44 +67,17 @@ function addRowToTable(tableID, index, values) {
 
 singlesData = new SinglesData();
 
-fetch('Singles.json')
+fetch('EloScoreSubmittal/Assets/StreamingAssets/Singles.json')
   .then(response => response.json())
   .then(data => {
     singlesData.registerPlayers(data);
   });
 
-fetch('singlesHistory.json')
+fetch('EloScoreSubmittal/Assets/StreamingAssets/singlesHistory.json')
   .then(response => response.json())
   .then(data => {
     singlesData.registerMatchHistory(data);
   })
-
-// Test
-// var obj = JSON.parse('{"singlesPlayers": [ { "tag": "Bleg","wins": 2,"totalGames": 4,"score": 999},{ "tag": "Cat","wins": 2,"totalGames": 4,"score": 1001}]}');
-// singlesData.registerPlayers(obj);
-
-
-// Button functions
-function submitSinglesMatch() {
-  var allFieldsValid = true;
-
-  var victor = document.getElementById("victor").value;
-  allFieldsValid &= (victor != "");
-
-
-  if (allFieldsValid) {
-    if (singlesData.playerData.has(victor)) {
-      var score = singlesData.getPlayerScore(victor)
-      document.getElementById("confirmSinglesMatchText").innerHTML = victor + "(" + score + ") won";
-    } else {
-      document.getElementById("confirmSinglesMatchText").innerHTML = "New Player " + victor + " won";
-    }
-    document.getElementById("confirmSinglesMatch").hidden = false;
-  } else {
-    document.getElementById("confirmSinglesMatchText").innerHTML = "Please fill out all fields";
-  }
-}
-
 
 </script>
 <style>
@@ -131,29 +104,6 @@ tr:nth-child(even) {
 
 <h1>Singles</h1>
 <br>
-<h3>Report a match</h3>
-<form name="Report a match">
-  <label for="victor">Victor</label>
-  <input type="text" id="victor" name="tag">
-  <label for="score1">Score: </label>
-  <input type="number" id="score1" name="score">
-  <label for="score2">Score: </label>
-  <input type="number" id="score2" name="score">
-  <label for="defeated">Defeated: </label>
-  <input type="text" id="defeated" name="tag"><br><br>
-  <label for="date">Date Played (mm/dd/yy):</label>
-  <input type="date" id="date" name="date played">
-</form> 
-<br>
-<button id="submitSinglesMatch" onclick="submitSinglesMatch()">Submit</button>
-<br><br>
-<p id="confirmSinglesMatchText"></p>
-<br>
-<div hidden id="confirmSinglesMatch">
-  <p>Is this correct?</p>
-  <button type="button">Confirm</button>
-</div>
-
 
 <br>
 <h3>Leaderboard</h3>
@@ -174,7 +124,6 @@ tr:nth-child(even) {
     <th>Victor</th>
     <th>Score</th>
     <th>Defeated</th>
-    <th>Date</th>
   </tr>
   
 </table>

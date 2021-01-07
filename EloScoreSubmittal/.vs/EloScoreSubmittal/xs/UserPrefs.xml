@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{C1172815-5BE5-D6B4-85FE-45E890278D4E}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ScoreManager.cs">
+    <Files>
+      <File FileName="Assets/ScoreManager.cs" Line="89" Column="2" />
+      <File FileName="../../TroupesTail/Assets/Scripts/Utilities/DialogueWriting/DialogueWriter2000Window.cs" Line="49" Column="37" />
+      <File FileName="../Singles.json" Line="2" Column="17" />
+      <File FileName="../../TroupesTail/Assets/Scripts/Utilities/DialogueWriting/DialogueWriter2000Editor.cs" Line="67" Column="76" />
+      <File FileName="../../TroupesTail/Assets/StreamingAssets/Dialogue/NPCIDs.json" Line="1" Column="1" />
+      <File FileName="../../TroupesTail/Assets/StreamingAssets/Dialogue/Theatre/BoartENDer.json" Line="1" Column="1" />
+      <File FileName="../../TroupesTail/Assets/Scripts/Interaction/Dialogue/Dialogue.cs" Line="34" Column="26" />
+      <File FileName="Assets/StreamingAssets/singlesHistory.json" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EloScoreSubmittal" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="ScoreManager.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a26e6425-cb32-4554-867e-5334fac10257" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
