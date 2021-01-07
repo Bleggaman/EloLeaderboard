@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{C1172815-5BE5-D6B4-85FE-45E890278D4E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ScoreManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../index.html">
     <Files>
-      <File FileName="Assets/ScoreManager.cs" Line="89" Column="2" />
+      <File FileName="Assets/ScoreManager.cs" Line="45" Column="1" />
       <File FileName="../../TroupesTail/Assets/Scripts/Utilities/DialogueWriting/DialogueWriter2000Window.cs" Line="49" Column="37" />
       <File FileName="../Singles.json" Line="2" Column="17" />
+      <File FileName="Assets/StreamingAssets/singlesHistory.json" Line="11" Column="23" />
       <File FileName="../../TroupesTail/Assets/Scripts/Utilities/DialogueWriting/DialogueWriter2000Editor.cs" Line="67" Column="76" />
       <File FileName="../../TroupesTail/Assets/StreamingAssets/Dialogue/NPCIDs.json" Line="1" Column="1" />
       <File FileName="../../TroupesTail/Assets/StreamingAssets/Dialogue/Theatre/BoartENDer.json" Line="1" Column="1" />
       <File FileName="../../TroupesTail/Assets/Scripts/Interaction/Dialogue/Dialogue.cs" Line="34" Column="26" />
-      <File FileName="Assets/StreamingAssets/singlesHistory.json" Line="1" Column="1" />
+      <File FileName="../index.html" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,6 +19,11 @@
               <Node name="ScoreManager.cs" selected="True" />
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="EloScoreSubmittal" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
