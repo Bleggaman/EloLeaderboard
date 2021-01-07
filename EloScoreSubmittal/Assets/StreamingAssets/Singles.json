@@ -1,0 +1,16 @@
+{
+	"singlesPlayers": [ 
+		{ 
+			"tag": "Bleg",
+			"wins": 2,
+			"totalGames": 4,
+			"score": 999
+		},
+		{ 
+			"tag": "Cat",
+			"wins": 2,
+			"totalGames": 4,
+			"score": 1001
+		}
+	]
+}
