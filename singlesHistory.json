@@ -1,24 +1,28 @@
 {
-  "singlesHistory": [
-  	{
-  		"victor": "Bleg",
-  		"score": "3-2",
-  		"defeated": "Cat"
-  	},
-  	{
-  		"victor": "Cat",
-  		"score": "3-1",
-  		"defeated": "Bleg"
-  	},
-  	{
-  		"victor": "Bleg",
-  		"score": "3-2",
-  		"defeated": "Cat"
-  	},
-  	{
-  		"victor": "Cat",
-  		"score": "3-0",
-  		"defeated": "Bleg"
-  	}
-  ]
+    "singlesHistory": [
+        {
+            "victor": "Bleg",
+            "score1": 0,
+            "score2": 0,
+            "defeated": "Cat"
+        },
+        {
+            "victor": "Cat",
+            "score1": 0,
+            "score2": 0,
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Bleg",
+            "score1": 0,
+            "score2": 0,
+            "defeated": "Cat"
+        },
+        {
+            "victor": "Cat",
+            "score1": 0,
+            "score2": 0,
+            "defeated": "Bleg"
+        }
+    ]
 }
