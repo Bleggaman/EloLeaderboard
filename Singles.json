@@ -4,7 +4,7 @@
             "tag": "Bleg",
             "wins": 9,
             "totalGames": 21,
-            "score": 948
+            "score": 956
         },
         {
             "tag": "Vanta",
@@ -81,14 +81,14 @@
         {
             "tag": "Shaine",
             "wins": 0,
-            "totalGames": 2,
-            "score": 968
+            "totalGames": 3,
+            "score": 948
         },
         {
             "tag": "Oasis",
-            "wins": 1,
-            "totalGames": 3,
-            "score": 972
+            "wins": 2,
+            "totalGames": 4,
+            "score": 992
         },
         {
             "tag": "Cashew",
@@ -136,7 +136,7 @@
             "tag": "Inaqui",
             "wins": 2,
             "totalGames": 3,
-            "score": 1010
+            "score": 1002
         }
     ]
 }
