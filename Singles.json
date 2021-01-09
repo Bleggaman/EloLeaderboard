@@ -3,37 +3,37 @@
         {
             "tag": "Bleg",
             "wins": 9,
-            "totalGames": 18,
+            "totalGames": 20,
             "score": 964
         },
         {
             "tag": "Vanta",
             "wins": 1,
-            "totalGames": 2,
+            "totalGames": 9,
             "score": 902
         },
         {
             "tag": "Thyroid",
             "wins": 2,
-            "totalGames": 4,
+            "totalGames": 3,
             "score": 1024
         },
         {
             "tag": "Solitary Hyena",
             "wins": 2,
-            "totalGames": 4,
+            "totalGames": 2,
             "score": 1036
         },
         {
             "tag": "Luneth",
             "wins": 2,
-            "totalGames": 4,
+            "totalGames": 6,
             "score": 974
         },
         {
             "tag": "Balco",
             "wins": 2,
-            "totalGames": 4,
+            "totalGames": 3,
             "score": 1020
         },
         {
@@ -45,73 +45,73 @@
         {
             "tag": "Daveid",
             "wins": 4,
-            "totalGames": 8,
+            "totalGames": 6,
             "score": 1036
         },
         {
             "tag": "Mikazuchi",
             "wins": 10,
-            "totalGames": 20,
+            "totalGames": 19,
             "score": 1048
         },
         {
             "tag": "Xero",
             "wins": 10,
-            "totalGames": 20,
+            "totalGames": 11,
             "score": 1122
         },
         {
             "tag": "Frogtaco",
             "wins": 0,
-            "totalGames": 0,
+            "totalGames": 4,
             "score": 928
         },
         {
             "tag": "TheSlammerss",
             "wins": 2,
-            "totalGames": 4,
+            "totalGames": 9,
             "score": 974
         },
         {
             "tag": "Whatty",
             "wins": 0,
-            "totalGames": 0,
+            "totalGames": 1,
             "score": 984
         },
         {
             "tag": "Shaine",
             "wins": 0,
-            "totalGames": 0,
+            "totalGames": 2,
             "score": 968
         },
         {
             "tag": "Oasis",
             "wins": 1,
-            "totalGames": 2,
+            "totalGames": 3,
             "score": 972
         },
         {
             "tag": "Cashew",
             "wins": 2,
-            "totalGames": 4,
+            "totalGames": 3,
             "score": 1018
         },
         {
             "tag": "Carp",
             "wins": 0,
-            "totalGames": 0,
+            "totalGames": 5,
             "score": 936
         },
         {
             "tag": "Sinbad",
             "wins": 5,
-            "totalGames": 10,
+            "totalGames": 8,
             "score": 1038
         },
         {
             "tag": "Porkchop",
             "wins": 15,
-            "totalGames": 30,
+            "totalGames": 20,
             "score": 1064
         },
         {
@@ -123,7 +123,7 @@
         {
             "tag": "Slyzian",
             "wins": 0,
-            "totalGames": 0,
+            "totalGames": 1,
             "score": 984
         },
         {
@@ -135,7 +135,7 @@
         {
             "tag": "Inaqui",
             "wins": 2,
-            "totalGames": 4,
+            "totalGames": 3,
             "score": 1010
         }
     ]
