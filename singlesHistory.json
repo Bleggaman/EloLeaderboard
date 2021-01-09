@@ -2,27 +2,382 @@
     "singlesHistory": [
         {
             "victor": "Bleg",
-            "score": "3-2",
-            "defeated": "Cat"
+            "score": "3-1",
+            "defeated": "Vanta"
         },
         {
-            "victor": "Cat",
+            "victor": "Vanta",
+            "score": "3-2",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Thyroid",
+            "score": "3-1",
+            "defeated": "Vanta"
+        },
+        {
+            "victor": "Solitary Hyena",
+            "score": "3-0",
+            "defeated": "Luneth"
+        },
+        {
+            "victor": "Balco",
+            "score": "3-1",
+            "defeated": "Avenue"
+        },
+        {
+            "victor": "Daveid",
+            "score": "3-0",
+            "defeated": "Luneth"
+        },
+        {
+            "victor": "Avenue",
+            "score": "3-2",
+            "defeated": "Mikazuchi"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-0",
+            "defeated": "Vanta"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-1",
+            "defeated": "Vanta"
+        },
+        {
+            "victor": "Daveid",
+            "score": "3-0",
+            "defeated": "Vanta"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-1",
+            "defeated": "Daveid"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-2",
+            "defeated": "Vanta"
+        },
+        {
+            "victor": "Balco",
+            "score": "3-0",
+            "defeated": "Vanta"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-0",
+            "defeated": "Frogtaco"
+        },
+        {
+            "victor": "Daveid",
+            "score": "3-1",
+            "defeated": "TheSlammerss"
+        },
+        {
+            "victor": "Daveid",
+            "score": "3-2",
+            "defeated": "Xero"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-1",
+            "defeated": "TheSlammerss"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-0",
+            "defeated": "Whatty"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-0",
+            "defeated": "Shaine"
+        },
+        {
+            "victor": "Avenue",
+            "score": "3-1",
+            "defeated": "Shaine"
+        },
+        {
+            "victor": "Avenue",
+            "score": "3-1",
+            "defeated": "Mikazuchi"
+        },
+        {
+            "victor": "Oasis",
+            "score": "3-2",
+            "defeated": "Vanta"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-1",
+            "defeated": "Balco"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-2",
+            "defeated": "Cashew"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-1",
+            "defeated": "Carp"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-1",
+            "defeated": "Carp"
+        },
+        {
+            "victor": "Sinbad",
+            "score": "3-1",
+            "defeated": "Mikazuchi"
+        },
+        {
+            "victor": "TheSlammerss",
+            "score": "3-2",
+            "defeated": "Carp"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-1",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Porkchop",
             "score": "3-1",
             "defeated": "Bleg"
         },
         {
             "victor": "Bleg",
-            "score": "3-2",
-            "defeated": "Cat"
+            "score": "3-0",
+            "defeated": "Sinbad"
         },
         {
-            "victor": "Cat",
+            "victor": "Bleg",
+            "score": "3-0",
+            "defeated": "Sinbad"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-2",
+            "defeated": "Sinbad"
+        },
+        {
+            "victor": "Sinbad",
+            "score": "3-1",
+            "defeated": "Frogtaco"
+        },
+        {
+            "victor": "Sinbad",
+            "score": "3-0",
+            "defeated": "Frogtaco"
+        },
+        {
+            "victor": "Sinbad",
+            "score": "3-0",
+            "defeated": "Frogtaco"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-2",
+            "defeated": "Mikazuchi"
+        },
+        {
+            "victor": "Mikazuchi",
             "score": "3-0",
             "defeated": "Bleg"
         },
         {
-            "victor": "New Player",
+            "victor": "Bleg",
             "score": "3-1",
+            "defeated": "Eyas"
+        },
+        {
+            "victor": "Eyas",
+            "score": "3-0",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Eyas",
+            "score": "3-1",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Solitary Hyena",
+            "score": "3-0",
+            "defeated": "Luneth"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-0",
+            "defeated": "Luneth"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-2",
+            "defeated": "Carp"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-1",
+            "defeated": "Carp"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-2",
+            "defeated": "Eyas"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-1",
+            "defeated": "Avenue"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-2",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Avenue",
+            "score": "3-2",
+            "defeated": "TheSlammerss"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-2",
+            "defeated": "TheSlammerss"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-2",
+            "defeated": "TheSlammerss"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-2",
+            "defeated": "Daveid"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-0",
+            "defeated": "Mikazuchi"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-2",
+            "defeated": "Mikazuchi"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-0",
+            "defeated": "Mikazuchi"
+        },
+        {
+            "victor": "Luneth",
+            "score": "3-1",
+            "defeated": "Oasis"
+        },
+        {
+            "victor": "Luneth",
+            "score": "3-2",
+            "defeated": "Oasis"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-2",
+            "defeated": "TheSlammerss"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-1",
+            "defeated": "TheSlammerss"
+        },
+        {
+            "victor": "TheSlammerss",
+            "score": "3-0",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-1",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-1",
+            "defeated": "Slyzian"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-0",
+            "defeated": "Avenue"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-2",
+            "defeated": "Avenue"
+        },
+        {
+            "victor": "Thyroid",
+            "score": "3-0",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-1",
+            "defeated": "Thyroid"
+        },
+        {
+            "victor": "Sinbad",
+            "score": "3-1",
+            "defeated": "Mikazuchi"
+        },
+        {
+            "victor": "Cashew",
+            "score": "3-1",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Cashew",
+            "score": "3-0",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-2",
+            "defeated": "Mikazuchi"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-2",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "DanyPB",
+            "score": "3-2",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-0",
+            "defeated": "DanyPB"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-0",
+            "defeated": "Inaqui"
+        },
+        {
+            "victor": "Inaqui",
+            "score": "3-1",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Inaqui",
+            "score": "3-2",
             "defeated": "Bleg"
         }
     ]
