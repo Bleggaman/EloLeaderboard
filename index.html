@@ -1,131 +1,131 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script>
+    <script>class SinglesData {
 
-class SinglesData {
+            constructor() {
+                this.playerData = new Map();
+            }
 
-  constructor() {
-    this.playerData = new Map();
-  }
+            // Processes and registers all players from Singles.json
+            registerPlayers = function (playerData) {
+                var players = playerData.singlesPlayers.sort(leaderboardSorting);
 
-  // Processes and registers all players from Singles.json
-  registerPlayers = function (playerData) {
-    var players = playerData.singlesPlayers.sort(leaderboardSorting);
+                players.forEach((player, index) => {
+                    this.playerData.set(player.tag, player);
+                    addPlayerToSinglesLeaderboard(player, index);
+                });
+            }
 
-    players.forEach((player, index) => {
-      this.playerData.set(player.tag, player);
-      addPlayerToSinglesLeaderboard(player, index);
-    });
-  }
-
-  registerMatchHistory = function (singlesHistoryData) {
-    this.singlesHistory = singlesHistoryData.singlesHistory;
-    this.singlesHistory.forEach(addMatchToSinglesHistory);
-  }
+            registerMatchHistory = function (singlesHistoryData) {
+                this.singlesHistory = singlesHistoryData.singlesHistory.sort(matchHistorySorting);
+                this.singlesHistory.forEach(addMatchToSinglesHistory);
+            }
 
 
-  // Getter methods
+            // Getter methods
 
-  // Returns the score for the player given
-  // - 1 if player not found
-  getPlayerScore = function (player) {
-    if (!this.playerData.has(player)) {
-      return -1;
-    } else {
-      return this.playerData.get(player).score;
-    }
-  }
-}
+            // Returns the score for the player given
+            // - 1 if player not found
+            getPlayerScore = function (player) {
+                if (!this.playerData.has(player)) {
+                    return -1;
+                } else {
+                    return this.playerData.get(player).score;
+                }
+            }
+        }
 
-// Takes in two playerDatas (could be either singles or doubles)
-// Compares them based on Score
-function leaderboardSorting(pData1, pData2) {
-  return pData2.score - pData1.score;
-}
+        // Takes in two playerDatas (could be either singles or doubles)
+        // Compares them based on Score
+        function leaderboardSorting(pData1, pData2) {
+            return pData2.score - pData1.score;
+        }
 
-function addPlayerToSinglesLeaderboard(player, index) {
-  index++;
-  var values = ["" + index, player.tag, "" + player.wins, "" + player.totalGames, "" + player.score];
-  addRowToTable("singlesLeaderboard", index, values);
-}
+        function matchHistorySorting(m1, m2) {
+            return -1;
+        }
 
-function addMatchToSinglesHistory(match, index) {
-  var values = [match.victor, "" + match.score, match.defeated];
-  addRowToTable("singlesHistory", index + 1, values);
-}
+        function addPlayerToSinglesLeaderboard(player, index) {
+            index++;
+            var values = ["" + index, player.tag, "" + player.wins, "" + player.totalGames, "" + player.score];
+            addRowToTable("singlesLeaderboard", index, values);
+        }
 
-// Adds an index'th row to the given table with the given values
-function addRowToTable(tableID, index, values) {
-  var table = document.getElementById(tableID);
-  var row = table.insertRow(index);
-  for (var i = 0; i < values.length; i++) {
-    var cell = row.insertCell();
-    cell.innerHTML = values[i];
-  }
-}
+        function addMatchToSinglesHistory(match, index) {
+            var values = [match.victor, "" + match.score, match.defeated];
+            addRowToTable("singlesHistory", index + 1, values);
+        }
 
-singlesData = new SinglesData();
+        // Adds an index'th row to the given table with the given values
+        function addRowToTable(tableID, index, values) {
+            var table = document.getElementById(tableID);
+            var row = table.insertRow(index);
+            for (var i = 0; i < values.length; i++) {
+                var cell = row.insertCell();
+                cell.innerHTML = values[i];
+            }
+        }
 
-fetch('Singles.json')
-  .then(response => response.json())
-  .then(data => {
-    singlesData.registerPlayers(data);
-  });
+        singlesData = new SinglesData();
 
-fetch('singlesHistory.json')
-  .then(response => response.json())
-  .then(data => {
-    singlesData.registerMatchHistory(data);
-  })
+        fetch('Singles.json')
+            .then(response => response.json())
+            .then(data => {
+                singlesData.registerPlayers(data);
+            });
 
-</script>
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+        fetch('singlesHistory.json')
+            .then(response => response.json())
+            .then(data => {
+                singlesData.registerMatchHistory(data);
+            })</script>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Bleg's ELO System</h1>
+    <h1>Bleg's ELO System</h1>
 
-<h1>Singles</h1>
+    <h1>Singles</h1>
 
-<h3>Leaderboard</h3>
-<table id= "singlesLeaderboard">
-  <tr>
-    <th>Rank</th>
-    <th>Tag</th>
-    <th>Wins</th>
-    <th>Total Games</th>
-    <th>Score</th>
-  </tr>
-  
-</table>
+    <h3>Leaderboard</h3>
+    <table id="singlesLeaderboard">
+        <tr>
+            <th>Rank</th>
+            <th>Tag</th>
+            <th>Wins</th>
+            <th>Total Games</th>
+            <th>Score</th>
+        </tr>
 
-<h3>History</h3>
-<table id= "singlesHistory">
-  <tr>
-    <th>Victor</th>
-    <th>Score</th>
-    <th>Defeated</th>
-    <th>Date</th>
-  </tr>
-  
-</table>
+    </table>
+
+    <h3>History</h3>
+    <table id="singlesHistory">
+        <tr>
+            <th>Victor</th>
+            <th>Score</th>
+            <th>Defeated</th>
+            <th>Date</th>
+        </tr>
+
+    </table>
 
 </body>
 </html>
