@@ -346,6 +346,11 @@
             "defeated": "Bleg"
         },
         {
+            "victor": "Cashew",
+            "score": "3-0",
+            "defeated": "Bleg"
+        },
+        {
             "victor": "Porkchop",
             "score": "3-2",
             "defeated": "Mikazuchi"
@@ -378,11 +383,6 @@
         {
             "victor": "Inaqui",
             "score": "3-2",
-            "defeated": "Bleg"
-        },
-        {
-            "victor": "Cashew",
-            "score": "3-0",
             "defeated": "Bleg"
         }
     ]
