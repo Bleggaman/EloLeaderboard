@@ -389,6 +389,36 @@
             "victor": "Oasis",
             "score": "3-0",
             "defeated": "Shaine"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-0",
+            "defeated": "Cashew"
+        },
+        {
+            "victor": "Cashew",
+            "score": "3-1",
+            "defeated": "Xero"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-1",
+            "defeated": "Cashew"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-2",
+            "defeated": "CPU!"
+        },
+        {
+            "victor": "CPU!",
+            "score": "3-1",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Cradugamer",
+            "score": "3-1",
+            "defeated": "Bleg"
         }
     ]
 }

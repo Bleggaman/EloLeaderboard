@@ -2,9 +2,9 @@
     "singlesPlayers": [
         {
             "tag": "Bleg",
-            "wins": 9,
-            "totalGames": 21,
-            "score": 956
+            "wins": 10,
+            "totalGames": 24,
+            "score": 946
         },
         {
             "tag": "Vanta",
@@ -56,9 +56,9 @@
         },
         {
             "tag": "Xero",
-            "wins": 10,
-            "totalGames": 11,
-            "score": 1122
+            "wins": 12,
+            "totalGames": 14,
+            "score": 1126
         },
         {
             "tag": "Frogtaco",
@@ -92,9 +92,9 @@
         },
         {
             "tag": "Cashew",
-            "wins": 3,
-            "totalGames": 4,
-            "score": 1034
+            "wins": 4,
+            "totalGames": 7,
+            "score": 1030
         },
         {
             "tag": "Carp",
@@ -137,6 +137,18 @@
             "wins": 2,
             "totalGames": 3,
             "score": 1002
+        },
+        {
+            "tag": "CPU!",
+            "wins": 1,
+            "totalGames": 2,
+            "score": 998
+        },
+        {
+            "tag": "Cradugamer",
+            "wins": 1,
+            "totalGames": 1,
+            "score": 1012
         }
     ]
 }
