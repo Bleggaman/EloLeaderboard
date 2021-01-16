@@ -3,8 +3,8 @@
         {
             "tag": "Bleg",
             "wins": 10,
-            "totalGames": 24,
-            "score": 946
+            "totalGames": 25,
+            "score": 934
         },
         {
             "tag": "Vanta",
@@ -51,8 +51,8 @@
         {
             "tag": "Mikazuchi",
             "wins": 10,
-            "totalGames": 19,
-            "score": 1048
+            "totalGames": 20,
+            "score": 1030
         },
         {
             "tag": "Xero",
@@ -146,6 +146,18 @@
         },
         {
             "tag": "Cradugamer",
+            "wins": 1,
+            "totalGames": 1,
+            "score": 1012
+        },
+        {
+            "tag": "RiiKy",
+            "wins": 1,
+            "totalGames": 1,
+            "score": 1018
+        },
+        {
+            "tag": "Krugbo",
             "wins": 1,
             "totalGames": 1,
             "score": 1012
