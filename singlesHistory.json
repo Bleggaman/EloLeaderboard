@@ -429,6 +429,71 @@
             "victor": "Krugbo",
             "score": "3-1",
             "defeated": "Bleg"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-0",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-2",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-1",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-0",
+            "defeated": "Carp"
+        },
+        {
+            "victor": "Carp",
+            "score": "3-2",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Carp",
+            "score": "3-2",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "RiiKy",
+            "score": "3-0",
+            "defeated": "Dysynk"
+        },
+        {
+            "victor": "RiiKy",
+            "score": "3-2",
+            "defeated": "Dysynk"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-2",
+            "defeated": "Avenue"
+        },
+        {
+            "victor": "Inaqui",
+            "score": "3-0",
+            "defeated": "Avenue"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-2",
+            "defeated": "Mikazuchi"
+        },
+        {
+            "victor": "Inaqui",
+            "score": "3-1",
+            "defeated": "Avenue"
+        },
+        {
+            "victor": "Inaqui",
+            "score": "3-1",
+            "defeated": "Avenue"
         }
     ]
 }

@@ -2,9 +2,9 @@
     "singlesPlayers": [
         {
             "tag": "Bleg",
-            "wins": 10,
-            "totalGames": 25,
-            "score": 934
+            "wins": 13,
+            "totalGames": 33,
+            "score": 940
         },
         {
             "tag": "Vanta",
@@ -39,8 +39,8 @@
         {
             "tag": "Avenue",
             "wins": 4,
-            "totalGames": 8,
-            "score": 998
+            "totalGames": 12,
+            "score": 940
         },
         {
             "tag": "Daveid",
@@ -51,14 +51,14 @@
         {
             "tag": "Mikazuchi",
             "wins": 10,
-            "totalGames": 20,
-            "score": 1030
+            "totalGames": 21,
+            "score": 1008
         },
         {
             "tag": "Xero",
-            "wins": 12,
-            "totalGames": 14,
-            "score": 1126
+            "wins": 15,
+            "totalGames": 17,
+            "score": 1152
         },
         {
             "tag": "Frogtaco",
@@ -98,9 +98,9 @@
         },
         {
             "tag": "Carp",
-            "wins": 0,
-            "totalGames": 5,
-            "score": 936
+            "wins": 2,
+            "totalGames": 8,
+            "score": 944
         },
         {
             "tag": "Sinbad",
@@ -134,9 +134,9 @@
         },
         {
             "tag": "Inaqui",
-            "wins": 2,
-            "totalGames": 3,
-            "score": 1002
+            "wins": 5,
+            "totalGames": 6,
+            "score": 1042
         },
         {
             "tag": "CPU!",
@@ -152,15 +152,21 @@
         },
         {
             "tag": "RiiKy",
-            "wins": 1,
-            "totalGames": 1,
-            "score": 1018
+            "wins": 3,
+            "totalGames": 3,
+            "score": 1048
         },
         {
             "tag": "Krugbo",
             "wins": 1,
             "totalGames": 1,
             "score": 1012
+        },
+        {
+            "tag": "Dysynk",
+            "wins": 0,
+            "totalGames": 2,
+            "score": 970
         }
     ]
 }
