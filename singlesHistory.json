@@ -494,6 +494,91 @@
             "victor": "Inaqui",
             "score": "3-1",
             "defeated": "Avenue"
+        },
+        {
+            "victor": "Thyroid",
+            "score": "3-0",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Solitary Hyena",
+            "score": "3-1",
+            "defeated": "CPU!"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-0",
+            "defeated": "Thyroid"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-2",
+            "defeated": "RiiKy"
+        },
+        {
+            "victor": "RiiKy",
+            "score": "3-2",
+            "defeated": "Cradugamer"
+        },
+        {
+            "victor": "RiiKy",
+            "score": "3-2",
+            "defeated": "Cradugamer"
+        },
+        {
+            "victor": "RiiKy",
+            "score": "3-2",
+            "defeated": "Carp"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-2",
+            "defeated": "RiiKy"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-0",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-2",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Thyroid",
+            "score": "3-1",
+            "defeated": "RiiKy"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-0",
+            "defeated": "Carp"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-0",
+            "defeated": "Carp"
+        },
+        {
+            "victor": "Zetami",
+            "score": "3-2",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-2",
+            "defeated": "Zetami"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-2",
+            "defeated": "Zetami"
+        },
+        {
+            "victor": "RiiKy",
+            "score": "3-1",
+            "defeated": "DudeFromBangBus"
         }
     ]
 }

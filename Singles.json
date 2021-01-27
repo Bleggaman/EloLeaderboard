@@ -2,9 +2,9 @@
     "singlesPlayers": [
         {
             "tag": "Bleg",
-            "wins": 13,
-            "totalGames": 33,
-            "score": 940
+            "wins": 16,
+            "totalGames": 37,
+            "score": 988
         },
         {
             "tag": "Vanta",
@@ -14,15 +14,15 @@
         },
         {
             "tag": "Thyroid",
-            "wins": 2,
-            "totalGames": 3,
-            "score": 1024
+            "wins": 4,
+            "totalGames": 6,
+            "score": 1032
         },
         {
             "tag": "Solitary Hyena",
-            "wins": 2,
-            "totalGames": 2,
-            "score": 1036
+            "wins": 3,
+            "totalGames": 3,
+            "score": 1048
         },
         {
             "tag": "Luneth",
@@ -50,9 +50,9 @@
         },
         {
             "tag": "Mikazuchi",
-            "wins": 10,
-            "totalGames": 21,
-            "score": 1008
+            "wins": 14,
+            "totalGames": 25,
+            "score": 1070
         },
         {
             "tag": "Xero",
@@ -99,8 +99,8 @@
         {
             "tag": "Carp",
             "wins": 2,
-            "totalGames": 8,
-            "score": 944
+            "totalGames": 11,
+            "score": 914
         },
         {
             "tag": "Sinbad",
@@ -110,9 +110,9 @@
         },
         {
             "tag": "Porkchop",
-            "wins": 15,
-            "totalGames": 20,
-            "score": 1064
+            "wins": 17,
+            "totalGames": 25,
+            "score": 1036
         },
         {
             "tag": "Eyas",
@@ -141,20 +141,20 @@
         {
             "tag": "CPU!",
             "wins": 1,
-            "totalGames": 2,
-            "score": 998
+            "totalGames": 3,
+            "score": 986
         },
         {
             "tag": "Cradugamer",
             "wins": 1,
-            "totalGames": 1,
-            "score": 1012
+            "totalGames": 3,
+            "score": 988
         },
         {
             "tag": "RiiKy",
-            "wins": 3,
-            "totalGames": 3,
-            "score": 1048
+            "wins": 7,
+            "totalGames": 10,
+            "score": 1034
         },
         {
             "tag": "Krugbo",
@@ -167,6 +167,18 @@
             "wins": 0,
             "totalGames": 2,
             "score": 970
+        },
+        {
+            "tag": "Zetami",
+            "wins": 1,
+            "totalGames": 3,
+            "score": 990
+        },
+        {
+            "tag": "DudeFromBangBus",
+            "wins": 0,
+            "totalGames": 1,
+            "score": 988
         }
     ]
 }
