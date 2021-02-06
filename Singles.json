@@ -3,8 +3,8 @@
         {
             "tag": "Bleg",
             "wins": 16,
-            "totalGames": 37,
-            "score": 988
+            "totalGames": 38,
+            "score": 972
         },
         {
             "tag": "Vanta",
@@ -14,9 +14,9 @@
         },
         {
             "tag": "Thyroid",
-            "wins": 4,
-            "totalGames": 6,
-            "score": 1032
+            "wins": 5,
+            "totalGames": 7,
+            "score": 1048
         },
         {
             "tag": "Solitary Hyena",
@@ -27,8 +27,8 @@
         {
             "tag": "Luneth",
             "wins": 2,
-            "totalGames": 6,
-            "score": 974
+            "totalGames": 10,
+            "score": 918
         },
         {
             "tag": "Balco",
@@ -116,9 +116,9 @@
         },
         {
             "tag": "Eyas",
-            "wins": 2,
-            "totalGames": 4,
-            "score": 1014
+            "wins": 3,
+            "totalGames": 5,
+            "score": 1034
         },
         {
             "tag": "Slyzian",
@@ -134,9 +134,9 @@
         },
         {
             "tag": "Inaqui",
-            "wins": 5,
-            "totalGames": 6,
-            "score": 1042
+            "wins": 7,
+            "totalGames": 8,
+            "score": 1070
         },
         {
             "tag": "CPU!",
@@ -146,9 +146,9 @@
         },
         {
             "tag": "Cradugamer",
-            "wins": 1,
-            "totalGames": 3,
-            "score": 988
+            "wins": 2,
+            "totalGames": 4,
+            "score": 1004
         },
         {
             "tag": "RiiKy",
@@ -179,6 +179,18 @@
             "wins": 0,
             "totalGames": 1,
             "score": 988
+        },
+        {
+            "tag": "Swizzle",
+            "wins": 1,
+            "totalGames": 1,
+            "score": 1012
+        },
+        {
+            "tag": "Zyul",
+            "wins": 0,
+            "totalGames": 1,
+            "score": 980
         }
     ]
 }
