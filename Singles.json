@@ -2,9 +2,9 @@
     "singlesPlayers": [
         {
             "tag": "Bleg",
-            "wins": 16,
-            "totalGames": 38,
-            "score": 972
+            "wins": 19,
+            "totalGames": 41,
+            "score": 1092
         },
         {
             "tag": "Vanta",
@@ -44,9 +44,9 @@
         },
         {
             "tag": "Daveid",
-            "wins": 4,
-            "totalGames": 6,
-            "score": 1036
+            "wins": 6,
+            "totalGames": 11,
+            "score": 1001
         },
         {
             "tag": "Mikazuchi",
@@ -56,9 +56,9 @@
         },
         {
             "tag": "Xero",
-            "wins": 15,
-            "totalGames": 17,
-            "score": 1152
+            "wins": 18,
+            "totalGames": 20,
+            "score": 1242
         },
         {
             "tag": "Frogtaco",
@@ -111,8 +111,8 @@
         {
             "tag": "Porkchop",
             "wins": 17,
-            "totalGames": 25,
-            "score": 1036
+            "totalGames": 27,
+            "score": 956
         },
         {
             "tag": "Eyas",
@@ -140,15 +140,15 @@
         },
         {
             "tag": "CPU!",
-            "wins": 1,
-            "totalGames": 3,
-            "score": 986
+            "wins": 3,
+            "totalGames": 6,
+            "score": 1031
         },
         {
             "tag": "Cradugamer",
             "wins": 2,
-            "totalGames": 4,
-            "score": 1004
+            "totalGames": 5,
+            "score": 954
         },
         {
             "tag": "RiiKy",
@@ -183,8 +183,8 @@
         {
             "tag": "Swizzle",
             "wins": 1,
-            "totalGames": 1,
-            "score": 1012
+            "totalGames": 4,
+            "score": 922
         },
         {
             "tag": "Zyul",

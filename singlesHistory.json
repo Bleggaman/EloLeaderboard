@@ -609,6 +609,56 @@
             "victor": "Cradugamer",
             "score": "3-1",
             "defeated": "Bleg"
+        },
+        {
+            "victor": "CPU!",
+            "score": "3-0",
+            "defeated": "Daveid"
+        },
+        {
+            "victor": "Daveid",
+            "score": "3-0",
+            "defeated": "CPU!"
+        },
+        {
+            "victor": "CPU!",
+            "score": "3-2",
+            "defeated": "Daveid"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-1",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-1",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Daveid",
+            "score": "3-0",
+            "defeated": "Cradugamer"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-1",
+            "defeated": "Daveid"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-0",
+            "defeated": "Swizzle"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-0",
+            "defeated": "Swizzle"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-0",
+            "defeated": "Swizzle"
         }
     ]
 }
