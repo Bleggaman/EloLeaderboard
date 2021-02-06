@@ -579,6 +579,106 @@
             "victor": "RiiKy",
             "score": "3-1",
             "defeated": "DudeFromBangBus"
+        },
+        {
+            "victor": "Zetami",
+            "score": "3-2",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-2",
+            "defeated": "Zetami"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-2",
+            "defeated": "Zetami"
+        },
+        {
+            "victor": "RiiKy",
+            "score": "3-1",
+            "defeated": "DudeFromBangBus"
+        },
+        {
+            "victor": "Thyroid",
+            "score": "3-0",
+            "defeated": "Luneth"
+        },
+        {
+            "victor": "Inaqui",
+            "score": "3-0",
+            "defeated": "Luneth"
+        },
+        {
+            "victor": "Inaqui",
+            "score": "3-0",
+            "defeated": "Luneth"
+        },
+        {
+            "victor": "Swizzle",
+            "score": "3-1",
+            "defeated": "Luneth"
+        },
+        {
+            "victor": "Eyas",
+            "score": "3-0",
+            "defeated": "Zyul"
+        },
+        {
+            "victor": "Cradugamer",
+            "score": "3-1",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "CPU!",
+            "score": "3-0",
+            "defeated": "Daveid"
+        },
+        {
+            "victor": "Daveid",
+            "score": "3-0",
+            "defeated": "CPU!"
+        },
+        {
+            "victor": "CPU!",
+            "score": "3-2",
+            "defeated": "Daveid"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-1",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-1",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Daveid",
+            "score": "3-0",
+            "defeated": "Cradugamer"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-1",
+            "defeated": "Daveid"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-0",
+            "defeated": "Swizzle"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-0",
+            "defeated": "Swizzle"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-0",
+            "defeated": "Swizzle"
         }
     ]
 }
