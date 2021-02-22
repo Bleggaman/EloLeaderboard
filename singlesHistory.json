@@ -659,6 +659,91 @@
             "victor": "Xero",
             "score": "3-0",
             "defeated": "Swizzle"
+        },
+        {
+            "victor": "Carp",
+            "score": "3-1",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Carp",
+            "score": "3-0",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Carp",
+            "score": "3-0",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-2",
+            "defeated": "Cashew"
+        },
+        {
+            "victor": "Cradugamer",
+            "score": "3-0",
+            "defeated": "TheSlammerss"
+        },
+        {
+            "victor": "Cradugamer",
+            "score": "3-0",
+            "defeated": "TheSlammerss"
+        },
+        {
+            "victor": "Solitary Hyena",
+            "score": "3-1",
+            "defeated": "RiiKy"
+        },
+        {
+            "victor": "Solitary Hyena",
+            "score": "3-0",
+            "defeated": "RiiKy"
+        },
+        {
+            "victor": "Daveid",
+            "score": "3-2",
+            "defeated": "Xero"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-1",
+            "defeated": "Daveid"
+        },
+        {
+            "victor": "Xero",
+            "score": "3-1",
+            "defeated": "Daveid"
+        },
+        {
+            "victor": "Swizzle",
+            "score": "3-2",
+            "defeated": "Daveid"
+        },
+        {
+            "victor": "Cradugamer",
+            "score": "3-2",
+            "defeated": "Condor"
+        },
+        {
+            "victor": "Cradugamer",
+            "score": "3-2",
+            "defeated": "Luneth"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-2",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-1",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-1",
+            "defeated": "Cradugamer"
         }
     ]
 }
