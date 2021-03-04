@@ -8,14 +8,16 @@
                 this.playerData = new Map();
                 this.season = season;
 
-                this.populate('Singles' + season, this.registerPlayers);
-                this.populate('singlesHistory' + season, this.registerMatchHistory);
+                this.populate("Singles" + season, this.registerPlayers);
+                this.populate("singlesHistory" + season, this.registerMatchHistory);
                 
             }
 
             // Populates a table with the data from the given file using the provided function
+
             populate = function (jsonFile, registrationFunction) {
-                fetch(jsonFile + '.json')
+                console.log("fetching from file: " + jsonFile + ".json")
+                fetch(jsonFile + ".json")
                     .then(response => response.json())
                     .then(data => {
                         this.registrationFunction(data);
@@ -43,6 +45,7 @@
 
             // Returns the score for the player given
             // - 1 if player not found
+
             getPlayerScore = function (player) {
                 if (!this.playerData.has(player)) {
                     return -1;
@@ -83,8 +86,8 @@
             }
         }
 
-        singlesData = new SinglesData('');
-        singlesDataS2 = new SinglesData('2');
+        singlesData = new SinglesData("");
+        singlesDataS2 = new SinglesData("2");
 
 
         function openSeason(evt, season) {
