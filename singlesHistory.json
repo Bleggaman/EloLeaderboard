@@ -764,6 +764,11 @@
             "victor": "Swizzle",
             "score": "3-2",
             "defeated": "Porkchop"
+        },
+        {
+            "victor": "Carp",
+            "score": "3-2",
+            "defeated": "CPU!"
         }
     ]
 }
