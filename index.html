@@ -81,6 +81,46 @@
                 singlesData.registerMatchHistory(data);
             })</script>
     <style>
+        body {
+            font-family: Arial;
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
         table {
             font-family: arial, sans-serif;
             border-collapse: collapse;
@@ -102,30 +142,66 @@
 
     <h1>Bleg's ELO System</h1>
 
-    <h1>Singles</h1>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'S2')">Season 2</button>
+        <button class="tablinks" onclick="openCity(event, 'S1')">Season 1</button>
+    </div>
 
-    <h3>Leaderboard</h3>
-    <table id="singlesLeaderboard">
-        <tr>
-            <th>Rank</th>
-            <th>Tag</th>
-            <th>Wins</th>
-            <th>Total Games</th>
-            <th>Score</th>
-        </tr>
 
-    </table>
+    <div id="S1" class="tabcontent">
+        <h1>Singles, Season 1</h1>
 
-    <h3>History</h3>
-    <table id="singlesHistory">
-        <tr>
-            <th>Victor</th>
-            <th>Score</th>
-            <th>Defeated</th>
-            <th>Date</th>
-        </tr>
+        <h3>Leaderboard</h3>
+        <table id="singlesLeaderboard">
+            <tr>
+                <th>Rank</th>
+                <th>Tag</th>
+                <th>Wins</th>
+                <th>Total Games</th>
+                <th>Score</th>
+            </tr>
 
-    </table>
+        </table>
+
+        <h3>History</h3>
+        <table id="singlesHistory">
+            <tr>
+                <th>Victor</th>
+                <th>Score</th>
+                <th>Defeated</th>
+                <th>Date</th>
+            </tr>
+
+        </table>
+    </div>
+
+    <div id="S2" class="tabcontent">
+        <h1>Singles, Season 2</h1>
+
+        <h3>Leaderboard</h3>
+        <table id="singlesLeaderboard2">
+            <tr>
+                <th>Rank</th>
+                <th>Tag</th>
+                <th>Wins</th>
+                <th>Total Games</th>
+                <th>Score</th>
+            </tr>
+
+        </table>
+
+        <h3>History</h3>
+        <table id="singlesHistory2">
+            <tr>
+                <th>Victor</th>
+                <th>Score</th>
+                <th>Defeated</th>
+                <th>Date</th>
+            </tr>
+
+        </table>
+    </div>
+
 
 </body>
 </html>
