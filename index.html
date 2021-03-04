@@ -31,7 +31,7 @@
 
                 players.forEach((player, index) => {
                     this.playerData.set(player.tag, player);
-                    addPlayerToSinglesLeaderboard(player, index);
+                    addPlayerToSinglesLeaderboard(player, index, this.season);
                 });
             }
 
@@ -68,12 +68,12 @@
         function addPlayerToSinglesLeaderboard(player, index) {
             index++;
             var values = ["" + index, player.tag, "" + player.wins, "" + player.totalGames, "" + player.score];
-            addRowToTable("singlesLeaderboard" + season, index, values);
+            addRowToTable("singlesLeaderboard", index, values);
         }
 
         function addMatchToSinglesHistory(match, index) {
             var values = [match.victor, "" + match.score, match.defeated];
-            addRowToTable("singlesHistory" + season, index + 1, values);
+            addRowToTable("singlesHistory", index + 1, values);
         }
 
         // Adds an index'th row to the given table with the given values
