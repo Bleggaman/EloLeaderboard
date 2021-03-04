@@ -3,14 +3,14 @@
         {
             "tag": "Solitary Hyena",
             "wins": 2,
-            "totalGames": 2,
-            "score": 1065
+            "totalGames": 3,
+            "score": 995
         },
         {
             "tag": "Inaqui",
-            "wins": 0,
-            "totalGames": 2,
-            "score": 935
+            "wins": 1,
+            "totalGames": 3,
+            "score": 1005
         }
     ]
 }
