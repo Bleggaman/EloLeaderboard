@@ -8,8 +8,8 @@
                 this.playerData = new Map();
                 this.season = season;
 
-                this.populate('Singles' + season, registerPlayers);
-                this.populate('singlesHistory' + season, registerMatchHistory);
+                this.populate('Singles' + season, this.registerPlayers);
+                this.populate('singlesHistory' + season, this.registerMatchHistory);
                 
             }
 
