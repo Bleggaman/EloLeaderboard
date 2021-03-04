@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script>class SinglesData {
+    <script>
+        class SinglesData {
 
-            constructor() {
+            constructor(season) {
                 this.playerData = new Map();
+                this.season = season;
+
+                this.populate('Singles' + season, registerPlayers);
+                this.populate('singlesHistory' + season, registerMatchHistory);
+                
+            }
+
+            // Populates a table with the data from the given file using the provided function
+            populate = function (jsonFile, registrationFunction) {
+                fetch(jsonFile + '.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        this.registrationFunction(data);
+                    })
             }
 
             // Processes and registers all players from Singles.json
+
             registerPlayers = function (playerData) {
                 var players = playerData.singlesPlayers.sort(leaderboardSorting);
 
@@ -49,12 +65,12 @@
         function addPlayerToSinglesLeaderboard(player, index) {
             index++;
             var values = ["" + index, player.tag, "" + player.wins, "" + player.totalGames, "" + player.score];
-            addRowToTable("singlesLeaderboard", index, values);
+            addRowToTable("singlesLeaderboard" + season, index, values);
         }
 
         function addMatchToSinglesHistory(match, index) {
             var values = [match.victor, "" + match.score, match.defeated];
-            addRowToTable("singlesHistory", index + 1, values);
+            addRowToTable("singlesHistory" + season, index + 1, values);
         }
 
         // Adds an index'th row to the given table with the given values
@@ -67,19 +83,24 @@
             }
         }
 
-        singlesData = new SinglesData();
+        singlesData = new SinglesData('');
+        singlesDataS2 = new SinglesData('2');
 
-        fetch('Singles.json')
-            .then(response => response.json())
-            .then(data => {
-                singlesData.registerPlayers(data);
-            });
 
-        fetch('singlesHistory.json')
-            .then(response => response.json())
-            .then(data => {
-                singlesData.registerMatchHistory(data);
-            })</script>
+        function openSeason(evt, season) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(season).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
     <style>
         body {
             font-family: Arial;
@@ -143,8 +164,8 @@
     <h1>Bleg's ELO System</h1>
 
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'S2')">Season 2</button>
-        <button class="tablinks" onclick="openCity(event, 'S1')">Season 1</button>
+        <button class="tablinks" onclick="openSeason(event, 'S2')">Season 2</button>
+        <button class="tablinks" onclick="openSeason(event, 'S1')">Season 1</button>
     </div>
 
 
