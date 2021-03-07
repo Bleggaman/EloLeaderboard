@@ -43,7 +43,10 @@
 
             registerMatchHistory = function (singlesHistoryData, singlesData) {
                 singlesData.singlesHistory = singlesHistoryData.singlesHistory.sort(matchHistorySorting);
-                singlesData.singlesHistory.forEach(singlesData.addMatchToSinglesHistory);
+                // Need to wrap addMatchToSinglesHistory in an anonymous function in order for it to know that "this." references "singlesData"
+                singlesData.singlesHistory.forEach((player, index) => {
+                    singlesData.addMatchToSinglesHistory(player, index);
+                });
             }
 
 
