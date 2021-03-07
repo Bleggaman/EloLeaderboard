@@ -2,15 +2,15 @@
     "singlesPlayers": [
         {
             "tag": "Solitary Hyena",
-            "wins": 2,
+            "wins": 1,
             "totalGames": 3,
-            "score": 995
+            "score": 945
         },
         {
             "tag": "Inaqui",
-            "wins": 1,
+            "wins": 2,
             "totalGames": 3,
-            "score": 1005
+            "score": 1055
         }
     ]
 }
