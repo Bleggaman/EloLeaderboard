@@ -30,11 +30,13 @@
                 var players = playerData.singlesPlayers.sort(leaderboardSorting);
 
                 console.log("first player: " + playerData.singlesPlayers[0].tag);
+                console.log("in our data player: " + this.playerData.size());
 
                 players.forEach((player, index) => {
                     this.playerData.set(player.tag, player);
                     this.addPlayerToSinglesLeaderboard(player, index);
                 });
+
             }
 
             // Sorts all Singles games from newest to oldest from SinglesHistory.json and adds them to the table
