@@ -27,7 +27,7 @@
             // Processes and registers all players from Singles.json and adds them on the leaderboard
 
             registerPlayers = function (playerData) {
-                var players = playerData.singlesPlayers.sort(this.leaderboardSorting);
+                var players = playerData.singlesPlayers.sort(leaderboardSorting);
 
                 players.forEach((player, index) => {
                     this.playerData.set(player.tag, player);
@@ -38,25 +38,8 @@
             // Sorts all Singles games from newest to oldest from SinglesHistory.json and adds them to the table
 
             registerMatchHistory = function (singlesHistoryData) {
-                this.singlesHistory = singlesHistoryData.singlesHistory.sort(this.matchHistorySorting);
+                this.singlesHistory = singlesHistoryData.singlesHistory.sort(matchHistorySorting);
                 this.singlesHistory.forEach(this.addMatchToSinglesHistory);
-            }
-
-
-
-            // Sorting functions:
-            /////////////////////
-
-            // Takes in two playerDatas (could be either singles or doubles)
-            // Compares them based on Score
-            leaderboardSorting = function(pData1, pData2) {
-                return pData2.score - pData1.score;
-            }
-
-            // Reverses the order
-
-            matchHistorySorting = function(m1, m2) {
-                return -1;
             }
 
 
@@ -97,7 +80,20 @@
         }
 
         
+        // Sorting functions:
+        /////////////////////
 
+        // Takes in two playerDatas (could be either singles or doubles)
+        // Compares them based on Score
+        function leaderboardSorting(pData1, pData2) {
+            return pData2.score - pData1.score;
+        }
+
+        // Reverses the order
+
+        function matchHistorySorting(m1, m2) {
+            return -1;
+        }
         
 
         
