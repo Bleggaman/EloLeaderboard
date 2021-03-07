@@ -14,6 +14,26 @@
             "victor": "Inaqui",
             "score": "3-0",
             "defeated": "Solitary Hyena"
+        },
+        {
+            "victor": "JDV",
+            "score": "3-1",
+            "defeated": "Cradugamer"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-2",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-0",
+            "defeated": "Mikazuchi"
+        },
+        {
+            "victor": "Mikazuchi",
+            "score": "3-2",
+            "defeated": "Bleg"
         }
     ]
 }

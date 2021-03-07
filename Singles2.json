@@ -11,6 +11,30 @@
             "wins": 2,
             "totalGames": 3,
             "score": 1055
+        },
+        {
+            "tag": "JDV",
+            "wins": 1,
+            "totalGames": 1,
+            "score": 1040
+        },
+        {
+            "tag": "Cradugamer",
+            "wins": 0,
+            "totalGames": 1,
+            "score": 960
+        },
+        {
+            "tag": "Mikazuchi",
+            "wins": 2,
+            "totalGames": 3,
+            "score": 1020
+        },
+        {
+            "tag": "Bleg",
+            "wins": 1,
+            "totalGames": 3,
+            "score": 980
         }
     ]
 }
