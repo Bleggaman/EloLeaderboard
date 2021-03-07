@@ -17,7 +17,6 @@
             // Populates a table with the data from the given file using the provided function
 
             populate = function (jsonFile, registrationFunction) {
-                console.log("fetching from file: " + jsonFile + ".json");
                 fetch(jsonFile + '.json')
                     .then(response => response.json())
                     .then(data => {
@@ -29,6 +28,8 @@
 
             registerPlayers = function (playerData) {
                 var players = playerData.singlesPlayers.sort(leaderboardSorting);
+
+                console.log("first player: " + playerData.singlesPlayers[0].tag);
 
                 players.forEach((player, index) => {
                     this.playerData.set(player.tag, player);
