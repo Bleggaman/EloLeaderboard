@@ -7,10 +7,11 @@
             constructor(season) {
                 this.playerData = new Map();
                 this.season = season;
+            }
 
+            loadData = function () {
                 this.populate("Singles" + season, this.registerPlayers);
                 this.populate("singlesHistory" + season, this.registerMatchHistory);
-                
             }
 
             // Populates a table with the data from the given file using the provided function
@@ -100,6 +101,9 @@
 
         singlesData = new SinglesData("");
         singlesDataS2 = new SinglesData("2");
+
+        singlesData.loadData();
+        singlesDataS2.loadData();
 
 
         //fetch("Singles.json")
