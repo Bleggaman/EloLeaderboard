@@ -30,9 +30,9 @@
                 var players = playerData.singlesPlayers.sort(leaderboardSorting);
 
                 console.log("first player: " + playerData.singlesPlayers[0].tag);
-                console.log("in our data player: " + this.playerData.size());
 
                 players.forEach((player, index) => {
+                    console.log('season: ' + this.season);
                     this.playerData.set(player.tag, player);
                     this.addPlayerToSinglesLeaderboard(player, index);
                 });
