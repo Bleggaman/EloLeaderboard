@@ -10,19 +10,19 @@
             }
 
             loadData = function () {
-                this.populate("Singles" + this.season, this.registerPlayers);
-                this.populate("singlesHistory" + this.season, this.registerMatchHistory);
+                this.populate('Singles' + this.season, this.registerPlayers);
+                this.populate('singlesHistory' + this.season, this.registerMatchHistory);
             }
 
             // Populates a table with the data from the given file using the provided function
 
             populate = function (jsonFile, registrationFunction) {
-                console.log("fetching from file: " + jsonFile + ".json")
-                fetch(jsonFile + ".json")
+                console.log("fetching from file: " + jsonFile + ".json");
+                fetch(jsonFile + '.json')
                     .then(response => response.json())
                     .then(data => {
                         registrationFunction(data);
-                    })
+                    });
             }
 
             // Processes and registers all players from Singles.json and adds them on the leaderboard
@@ -99,8 +99,8 @@
 
         
 
-        singlesData = new SinglesData("");
-        singlesDataS2 = new SinglesData("2");
+        singlesData = new SinglesData('');
+        singlesDataS2 = new SinglesData('');
 
         singlesData.loadData();
         singlesDataS2.loadData();
