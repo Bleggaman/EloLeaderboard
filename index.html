@@ -47,6 +47,19 @@
             }
 
 
+            addPlayerToSinglesLeaderboard = function (player, index) {
+                index++;
+                var values = ["" + index, player.tag, "" + player.wins, "" + player.totalGames, "" + player.score];
+                addRowToTable("singlesLeaderboard" + this.season, index, values);
+            }
+
+            addMatchToSinglesHistory = function (match, index) {
+                var values = [match.victor, "" + match.score, match.defeated];
+                addRowToTable("singlesHistory" + this.season, index + 1, values);
+            }
+
+
+
             // Getter methods
 
             // Returns the score for the player given
@@ -59,28 +72,7 @@
                     return this.playerData.get(player).score;
                 }
             }
-
-
-            addPlayerToSinglesLeaderboard = function(player, index) {
-                index++;
-                var values = ["" + index, player.tag, "" + player.wins, "" + player.totalGames, "" + player.score];
-                this.addRowToTable("singlesLeaderboard" + this.season, index, values);
-            }
-
-            addMatchToSinglesHistory = function(match, index) {
-                var values = [match.victor, "" + match.score, match.defeated];
-                this.addRowToTable("singlesHistory" + this.season, index + 1, values);
-            }
-
-            // Adds an index'th row to the given table with the given values
-            addRowToTable = function(tableID, index, values) {
-                var table = document.getElementById(tableID);
-                var row = table.insertRow(index);
-                for (var i = 0; i < values.length; i++) {
-                    var cell = row.insertCell();
-                    cell.innerHTML = values[i];
-                }
-            }
+            
         }
 
         
@@ -121,6 +113,25 @@
         //        singlesData.registerMatchHistory(data);
         //    })
 
+
+        // Table and Tab Functions
+        //////////////////////////
+
+
+
+        // Adds an index'th row to the given table with the given values
+
+        function addRowToTable(tableID, index, values) {
+            var table = document.getElementById(tableID);
+            var row = table.insertRow(index);
+            for (var i = 0; i < values.length; i++) {
+                var cell = row.insertCell();
+                cell.innerHTML = values[i];
+            }
+        }
+
+
+        // On an event, opens a given season tab
 
         function openSeason(evt, season) {
             var i, tabcontent, tablinks;
