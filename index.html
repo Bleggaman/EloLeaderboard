@@ -8,8 +8,8 @@
                 this.playerData = new Map();
                 this.season = season;
 
-                //this.populate("Singles" + season, this.registerPlayers);
-                //this.populate("singlesHistory" + season, this.registerMatchHistory);
+                this.populate("Singles" + season, this.registerPlayers);
+                this.populate("singlesHistory" + season, this.registerMatchHistory);
                 
             }
 
@@ -24,20 +24,39 @@
                     })
             }
 
-            // Processes and registers all players from Singles.json
+            // Processes and registers all players from Singles.json and adds them on the leaderboard
 
             registerPlayers = function (playerData) {
-                var players = playerData.singlesPlayers.sort(leaderboardSorting);
+                var players = playerData.singlesPlayers.sort(this.leaderboardSorting);
 
                 players.forEach((player, index) => {
                     this.playerData.set(player.tag, player);
-                    addPlayerToSinglesLeaderboard(player, index, this.season);
+                    this.addPlayerToSinglesLeaderboard(player, index);
                 });
             }
 
+            // Sorts all Singles games from newest to oldest from SinglesHistory.json and adds them to the table
+
             registerMatchHistory = function (singlesHistoryData) {
-                this.singlesHistory = singlesHistoryData.singlesHistory.sort(matchHistorySorting);
-                this.singlesHistory.forEach(addMatchToSinglesHistory);
+                this.singlesHistory = singlesHistoryData.singlesHistory.sort(this.matchHistorySorting);
+                this.singlesHistory.forEach(this.addMatchToSinglesHistory);
+            }
+
+
+
+            // Sorting functions:
+            /////////////////////
+
+            // Takes in two playerDatas (could be either singles or doubles)
+            // Compares them based on Score
+            leaderboardSorting = function(pData1, pData2) {
+                return pData2.score - pData1.score;
+            }
+
+            // Reverses the order
+
+            matchHistorySorting = function(m1, m2) {
+                return -1;
             }
 
 
@@ -53,53 +72,51 @@
                     return this.playerData.get(player).score;
                 }
             }
-        }
 
-        // Takes in two playerDatas (could be either singles or doubles)
-        // Compares them based on Score
-        function leaderboardSorting(pData1, pData2) {
-            return pData2.score - pData1.score;
-        }
 
-        function matchHistorySorting(m1, m2) {
-            return -1;
-        }
+            addPlayerToSinglesLeaderboard = function(player, index) {
+                index++;
+                var values = ["" + index, player.tag, "" + player.wins, "" + player.totalGames, "" + player.score];
+                this.addRowToTable("singlesLeaderboard" + this.season, index, values);
+            }
 
-        function addPlayerToSinglesLeaderboard(player, index) {
-            index++;
-            var values = ["" + index, player.tag, "" + player.wins, "" + player.totalGames, "" + player.score];
-            addRowToTable("singlesLeaderboard", index, values);
-        }
+            addMatchToSinglesHistory = function(match, index) {
+                var values = [match.victor, "" + match.score, match.defeated];
+                this.addRowToTable("singlesHistory" + this.season, index + 1, values);
+            }
 
-        function addMatchToSinglesHistory(match, index) {
-            var values = [match.victor, "" + match.score, match.defeated];
-            addRowToTable("singlesHistory", index + 1, values);
-        }
-
-        // Adds an index'th row to the given table with the given values
-        function addRowToTable(tableID, index, values) {
-            var table = document.getElementById(tableID);
-            var row = table.insertRow(index);
-            for (var i = 0; i < values.length; i++) {
-                var cell = row.insertCell();
-                cell.innerHTML = values[i];
+            // Adds an index'th row to the given table with the given values
+            addRowToTable = function(tableID, index, values) {
+                var table = document.getElementById(tableID);
+                var row = table.insertRow(index);
+                for (var i = 0; i < values.length; i++) {
+                    var cell = row.insertCell();
+                    cell.innerHTML = values[i];
+                }
             }
         }
+
+        
+
+        
+
+        
 
         singlesData = new SinglesData("");
         singlesDataS2 = new SinglesData("2");
 
-        fetch("Singles.json")
-            .then(response => response.json())
-            .then(data => {
-                singlesData.registerPlayers(data);
-            })
 
-        fetch("singlesHistory.json")
-            .then(response => response.json())
-            .then(data => {
-                singlesData.registerMatchHistory(data);
-            })
+        //fetch("Singles.json")
+        //    .then(response => response.json())
+        //    .then(data => {
+        //        singlesData.registerPlayers(data);
+        //    })
+
+        //fetch("singlesHistory.json")
+        //    .then(response => response.json())
+        //    .then(data => {
+        //        singlesData.registerMatchHistory(data);
+        //    })
 
 
         function openSeason(evt, season) {
@@ -115,6 +132,7 @@
             document.getElementById(season).style.display = "block";
             evt.currentTarget.className += " active";
         }
+
     </script>
     <style>
         body {
@@ -211,32 +229,32 @@
         </table>
     </div>
 
-    <div id="S2" class="tabcontent">
+    <div id="S2" class="tabcontent" active>
         <h3>The Season 2 leaderboard is currently under construction Please check back later this week.</h3>
-        <!--<h1>Singles, Season 2</h1>
+        <h1>Singles, Season 2</h1>
 
-    <h3>Leaderboard</h3>
-    <table id="singlesLeaderboard2">
-        <tr>
-            <th>Rank</th>
-            <th>Tag</th>
-            <th>Wins</th>
-            <th>Total Games</th>
-            <th>Score</th>
-        </tr>
+        <h3>Leaderboard</h3>
+        <table id="singlesLeaderboard2">
+            <tr>
+                <th>Rank</th>
+                <th>Tag</th>
+                <th>Wins</th>
+                <th>Total Games</th>
+                <th>Score</th>
+            </tr>
 
-    </table>
+        </table>
 
-    <h3>History</h3>
-    <table id="singlesHistory2">
-        <tr>
-            <th>Victor</th>
-            <th>Score</th>
-            <th>Defeated</th>
-            <th>Date</th>
-        </tr>
+        <h3>History</h3>
+        <table id="singlesHistory2">
+            <tr>
+                <th>Victor</th>
+                <th>Score</th>
+                <th>Defeated</th>
+                <th>Date</th>
+            </tr>
 
-    </table>-->
+        </table>
     </div>
 
 
