@@ -29,10 +29,7 @@
             registerPlayers = function (playerData, singlesData) {
                 var players = playerData.singlesPlayers.sort(leaderboardSorting);
 
-                console.log("first player: " + playerData.singlesPlayers[0].tag);
-
                 players.forEach((player, index) => {
-                    console.log('season: ' + singlesData.season);
                     singlesData.playerData.set(player.tag, player);
                     singlesData.addPlayerToSinglesLeaderboard(player, index);
                 });
@@ -119,7 +116,6 @@
         // On an event, opens a given season tab
 
         function openSeason(evt, season) {
-            console.log("Bleg");
             var i, tabcontent, tablinks;
 
             tabcontent = document.getElementsByClassName("tabcontent");
