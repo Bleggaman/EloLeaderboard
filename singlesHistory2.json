@@ -34,6 +34,36 @@
             "victor": "Mikazuchi",
             "score": "3-2",
             "defeated": "Bleg"
+        },
+        {
+            "victor": "JDV",
+            "score": "3-0",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "TheSlammers",
+            "score": "3-0",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-1",
+            "defeated": "Mr Mystery"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-0",
+            "defeated": "ArcTheGreat"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-1",
+            "defeated": "Gui"
+        },
+        {
+            "victor": "Sheep",
+            "score": "3-0",
+            "defeated": "Bleg"
         }
     ]
 }

@@ -14,9 +14,9 @@
         },
         {
             "tag": "JDV",
-            "wins": 1,
-            "totalGames": 1,
-            "score": 1040
+            "wins": 2,
+            "totalGames": 2,
+            "score": 1080
         },
         {
             "tag": "Cradugamer",
@@ -32,9 +32,39 @@
         },
         {
             "tag": "Bleg",
+            "wins": 4,
+            "totalGames": 9,
+            "score": 990
+        },
+        {
+            "tag": "TheSlammers",
             "wins": 1,
-            "totalGames": 3,
-            "score": 980
+            "totalGames": 1,
+            "score": 1040
+        },
+        {
+            "tag": "Mr Mystery",
+            "wins": 0,
+            "totalGames": 1,
+            "score": 940
+        },
+        {
+            "tag": "ArcTheGreat",
+            "wins": 0,
+            "totalGames": 1,
+            "score": 940
+        },
+        {
+            "tag": "Gui",
+            "wins": 0,
+            "totalGames": 1,
+            "score": 970
+        },
+        {
+            "tag": "Sheep",
+            "wins": 1,
+            "totalGames": 1,
+            "score": 1060
         }
     ]
 }
