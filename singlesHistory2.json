@@ -64,6 +64,91 @@
             "victor": "Sheep",
             "score": "3-0",
             "defeated": "Bleg"
+        },
+        {
+            "victor": "LPC",
+            "score": "3-1",
+            "defeated": "CPU!"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-2",
+            "defeated": "Mikazuchi"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-2",
+            "defeated": "Grand"
+        },
+        {
+            "victor": "Carp",
+            "score": "3-0",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-2",
+            "defeated": "TayJuice"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-0",
+            "defeated": "Carp"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-0",
+            "defeated": "Carp"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-2",
+            "defeated": "Sinbad"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-2",
+            "defeated": "Sinbad"
+        },
+        {
+            "victor": "Inaqui",
+            "score": "3-1",
+            "defeated": "Carp"
+        },
+        {
+            "victor": "Inaqui",
+            "score": "3-1",
+            "defeated": "Carp"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-1",
+            "defeated": "Thyroid"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-2",
+            "defeated": "Thyroid"
+        },
+        {
+            "victor": "Porkchop",
+            "score": "3-1",
+            "defeated": "Bleg"
+        },
+        {
+            "victor": "Bleg",
+            "score": "3-1",
+            "defeated": "Porkchop"
+        },
+        {
+            "victor": "Avenue",
+            "score": "3-2",
+            "defeated": "Luneth"
+        },
+        {
+            "victor": "Cradugamer",
+            "score": "3-1",
+            "defeated": "Luneth"
         }
     ]
 }

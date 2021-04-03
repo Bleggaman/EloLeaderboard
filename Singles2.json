@@ -8,9 +8,9 @@
         },
         {
             "tag": "Inaqui",
-            "wins": 2,
-            "totalGames": 3,
-            "score": 1055
+            "wins": 4,
+            "totalGames": 5,
+            "score": 1105
         },
         {
             "tag": "JDV",
@@ -20,21 +20,21 @@
         },
         {
             "tag": "Cradugamer",
-            "wins": 0,
-            "totalGames": 1,
-            "score": 960
+            "wins": 1,
+            "totalGames": 2,
+            "score": 1000
         },
         {
             "tag": "Mikazuchi",
             "wins": 2,
-            "totalGames": 3,
-            "score": 1020
+            "totalGames": 4,
+            "score": 975
         },
         {
             "tag": "Bleg",
-            "wins": 4,
-            "totalGames": 9,
-            "score": 990
+            "wins": 10,
+            "totalGames": 16,
+            "score": 1150
         },
         {
             "tag": "TheSlammers",
@@ -65,6 +65,66 @@
             "wins": 1,
             "totalGames": 1,
             "score": 1060
+        },
+        {
+            "tag": "LPC",
+            "wins": 1,
+            "totalGames": 1,
+            "score": 1040
+        },
+        {
+            "tag": "CPU!",
+            "wins": 0,
+            "totalGames": 1,
+            "score": 960
+        },
+        {
+            "tag": "Porkchop",
+            "wins": 5,
+            "totalGames": 7,
+            "score": 1080
+        },
+        {
+            "tag": "Grand",
+            "wins": 0,
+            "totalGames": 1,
+            "score": 975
+        },
+        {
+            "tag": "Carp",
+            "wins": 1,
+            "totalGames": 5,
+            "score": 910
+        },
+        {
+            "tag": "TayJuice",
+            "wins": 0,
+            "totalGames": 1,
+            "score": 965
+        },
+        {
+            "tag": "Sinbad",
+            "wins": 0,
+            "totalGames": 2,
+            "score": 940
+        },
+        {
+            "tag": "Thyroid",
+            "wins": 0,
+            "totalGames": 2,
+            "score": 965
+        },
+        {
+            "tag": "Avenue",
+            "wins": 1,
+            "totalGames": 1,
+            "score": 1035
+        },
+        {
+            "tag": "Luneth",
+            "wins": 0,
+            "totalGames": 2,
+            "score": 925
         }
     ]
 }
